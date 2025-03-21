@@ -1,0 +1,21 @@
+galaxy_info:
+  author: jouw_naam
+  description: Role voor het installeren en configureren van Apache, PHP en MySQL
+  company: jouw_bedrijf_of_naam
+
+  license: MIT
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - webserver
+    - apache
+    - php
+    - mysql
+
+dependencies: []

@@ -1,0 +1,12 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for galaxyAnsible
+---
+- include_tasks: apache.yml
+  when: inventory_hostname in groups['webservers']
+ 
+- include_tasks: php.yml
+  when: inventory_hostname in groups['webservers']
+
+- include_tasks: mysql.yml
+  when: inventory_hostname in groups['dbservers']

@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# defaults file for galaxyAnsible
+# Standaard variabelen
+server_type: webserver
+
+# MySQL variabelen
+mysql_user: dbuser
+mysql_password: dbpassword

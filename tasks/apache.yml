@@ -1,0 +1,13 @@
+---
+- name: Installeer Apache
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+  notify: restart apache
+
+- name: Zorg dat Apache service draait
+  service:
+    name: apache2
+    state: started
+    enabled: yes
